@@ -45,7 +45,7 @@ export default {
             "Hello there from [Cloudflare Workers](https://github.com/gr2m/cloudflare-worker-github-app-example/#readme)",
         }
       );
-      console.log("HELLO, WORLD! ---> " + payload.repository.name);
+      //console.log("HELLO, WORLD! ---> " + payload.repository.name);
     });
 
     if (request.method === "GET") {
