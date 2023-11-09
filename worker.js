@@ -53,7 +53,7 @@ export default {
 
       return new Response(
         `<h1>Cloudflare Worker Example GitHub app</h1>
-
+        <h2>Hello world</h2>
 <p>Installation count: ${data.installations_count}</p>
 
 <p><a href="https://github.com/apps/cloudflare-worker-example">Install</a> | <a href="https://github.com/gr2m/cloudflare-worker-github-app-example/#readme">source code</a></p>`,
