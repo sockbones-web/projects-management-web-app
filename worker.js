@@ -48,7 +48,7 @@ export default {
       console.log("HELLO, WORLD! ---> " + payload.repository.name);
     });
 
-    app.webhooks.on("projects_v2_item.created", async ({ octokit, payload }) => {
+    app.webhooks.on("projects_v2_item", async ({ octokit, payload }) => {
       // await octokit.request(
       //   "POST /repos/{owner}/{repo}/issues/{issue_number}/comments",
       //   {
@@ -59,7 +59,7 @@ export default {
       //       "Hello there from [Cloudflare Workers](https://github.com/gr2m/cloudflare-worker-github-app-example/#readme)",
       //   }
       // );
-      console.log("ITEM CREATED! ---> " + payload.projects_v2_item.creator.name);
+      console.log("PROJECTS V2 ITEM! ---> " + JSON.stringify(payload, null, 2));
     });
 
     if (request.method === "GET") {
