@@ -48,7 +48,7 @@ export default {
       console.log("HELLO, WORLD! ---> " + payload.repository.name);
     });
 
-    app.webhooks.on("projects_v2_item", async ({ octokit, payload }) => {
+    app.webhooks.on("projects_v2_item.created", async ({ octokit, payload }) => {
       // await octokit.request(
       //   "POST /repos/{owner}/{repo}/issues/{issue_number}/comments",
       //   {
