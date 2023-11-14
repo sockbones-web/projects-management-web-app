@@ -8,11 +8,17 @@
   "license": "ISC",
   "repository": "github:gr2m/cloudflare-worker-github-app-example",
   "dependencies": {
-    "@octokit/app": "^10.0.2"
+    "@octokit/app": "^14.0.1"
   },
   "release": {
     "branches": [
       "main"
     ]
+  },
+  "devDependencies": {
+    "vitest": "^0.34.6"
+  },
+  "scripts": {
+    "test": "vitest"
   }
 }
